@@ -4,6 +4,3 @@ The code is for the work:
 
  You can run the Example_10_factors.m for image super-resolution via MMSR 
 
- You can run the train_dictionary.m for training the dictionary (You can download the training images from J. Yang's home page, 'http://www.ifp.illinois.edu/~jyang29/' and unzip them to folder 'Data\Training' ).
-
-
