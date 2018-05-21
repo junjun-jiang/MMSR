@@ -1,19 +1,9 @@
-Description
+The code is for the work:
 
-This package contains the Matlab codes implementing the super-resolution algorithm described in CVPR'08 paper "Image Super-resolution 
-as Sparse Representation of Raw Image Patches".
+[1] J. Jiang, R. Hu, Z. Wang, and Z. Han, “Manifold regularized sparse support regression for single image super-resolution,” in Proceedings of the International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2013), Vancouver, Canada, pp. 1429-1433, May 2013.
 
-The codes vary a little from the original paper:
-a. The implementation is a simplified version of the algorithm described in the paper. The overlapping constraint for patches is not 
-   taken into sparse coding process. The backprojection process is not incorporated either. It seems that straight sparse coding itself 
-   can achieve similar performance.
-b. We trained the dictionary instead of random sampling in this version. A pre-trained dictionary is included (dictionary.mat).
+ You can run the Example_10_factors.m for image super-resolution via MMSR 
 
-The algorithm is composed of the following parts:
-a. Dictionary training. We used Honglak Lee's package for learning the dictionary. We also include the training images we used in folder
-   "Training".
-b. Sparse representation for super-resolution. Use sparse prior to infer the high resolution patch.
+ You can run the train_dictionary.m for training the dictionary (You can download the training images from J. Yang's home page, 'http://www.ifp.illinois.edu/~jyang29/' and unzip them to folder 'Data\Training' ).
 
-Run Example.m to see how the functions are called. Have fun!
 
-For any questions, please email to jyang29@uiuc.edu
